@@ -6,8 +6,17 @@
   <div class="content__blocks-wrapper">
     <section class="content__info-block">
 
-      <div id="app" class="app">
+      <div class="app">
         <h2  class="content__info-h2">Что-то {{ message }}</h2>
+
+        <article class="content__counter-block">
+          <h3 class="content__counter-h3">Счётчик:</h3>
+          <div class="content__counter-row">
+            <p class="content__counter-txt">{{ counter }}</p>
+            <button class="content__counter-btn" v-on:click="addCounter">+1</button>
+            <button class="content__counter-btn" v-on:click="counter--">-1</button>
+          </div>
+        </article>
       </div>
 
     </section>
@@ -17,6 +26,7 @@
       <h2 class="content__info-h2">Что-то</h2>
 
     </section>
+
 
 
   </div>

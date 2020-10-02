@@ -33,7 +33,15 @@
     new Vue({
       el: '.app',
       data: {
-        message: 'VueJs!'
+        message: 'VueJs!',
+        counter: 0
+      },
+      methods: {
+        addCounter: function() {
+          this.counter++
+
+        }
+
       }
     });
 </script>
