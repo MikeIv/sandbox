@@ -297,8 +297,8 @@ img {
 .content__info-block {
   display: flex;
   flex-wrap: wrap;
-  width: 100rem;
-  min-height: 80rem;
+  width: 80rem;
+  min-height: 50rem;
   margin: 0 auto;
   margin-bottom: 10rem;
   padding: 0;
@@ -310,6 +310,15 @@ img {
   font-size: 2rem;
   background-color: #e0e0e0;
   border-radius: 0.5rem;
+}
+.content__info-block--order3 {
+  order: 3;
+}
+.content__info-block--order2 {
+  order: 2;
+}
+.content__info-block--order1 {
+  order: 1;
 }
 /*-- footer --*/
 .footer {
